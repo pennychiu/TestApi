@@ -46,6 +46,10 @@ namespace TestApi
             })
             .WithName("GetWeatherForecast");
 
+            app.MapGet("/test", (HttpContext httpcontext) =>
+            {
+                return "test";
+            });
             app.Run();
         }
     }
